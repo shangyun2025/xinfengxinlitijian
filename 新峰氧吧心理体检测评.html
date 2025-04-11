@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理体检 H5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 整体背景颜色 */
+        body {
+            background-color: #f4f4f9;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+        }
+
+        /* 测试题容器样式 */
+       .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: clamp(1rem, 3vw, 2rem);
+            margin-bottom: clamp(1rem, 3vw, 2rem);
+            width: 90%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 问题标题样式 */
+       .container p.text-xl {
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+        }
+
+        /* 选项样式 */
+       .container label {
+            color: #777;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+
+        /* 按钮样式 */
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 0.8rem 1.5rem;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff8e8e;
+            transform: scale(1.05);
+        }
+
+        /* 动画效果 */
+       .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* 信任增强模块样式 */
+       .trust-enhancement {
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            color: #777;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* 报告部分样式 */
+       .report-container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: clamp(1rem, 3vw, 2rem);
+            margin-bottom: clamp(1rem, 3vw, 2rem);
+            width: 90%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+       .report-container h1 {
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+        }
+
+       .report-container ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+       .report-container li {
+            margin-bottom: 0.5rem;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+
+        /* 版权信息样式 */
+       .copyright {
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            color: #777;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- 测试题部分容器 -->
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-8">心理体检</h1>
+        <!-- 破冰题 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">1. 如果用一种天气形容最近的心情，你会选？</p>
+            <label class="block mb-2">
+                <input type="radio" name="q1" value="阴雨绵绵" class="mr-2">
+                阴雨绵绵
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q1" value="多云转晴" class="mr-2">
+                多云转晴
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q1" value="晴空万里" class="mr-2">
+                晴空万里
+            </label>
+            <label class="block">
+                <input type="radio" name="q1" value="狂风暴雨" class="mr-2">
+                狂风暴雨
+            </label>
+        </div>
+        <!-- 第一层 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">2. 最近 1 个月，以下困扰是否频繁出现？（可多选）</p>
+            <label class="block mb-2">
+                <input type="checkbox" name="q2" value="失眠/早醒" class="mr-2">
+                失眠/早醒
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q2" value="忍不住和人吵架/冷战" class="mr-2">
+                忍不住和人吵架/冷战
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q2" value="做事提不起劲/自我怀疑" class="mr-2">
+                做事提不起劲/自我怀疑
+            </label>
+            <label class="block">
+                <input type="checkbox" name="q2" value="没有明显困扰" class="mr-2">
+                没有明显困扰
+            </label>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">3. 当情绪不好时，你最想立刻获得：</p>
+            <label class="block mb-2">
+                <input type="radio" name="q3" value="能马上用的调节工具" class="mr-2">
+                能马上用的调节工具
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q3" value="有人陪你梳理问题" class="mr-2">
+                有人陪你梳理问题
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q3" value="长期系统改善" class="mr-2">
+                长期系统改善
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q3" value="独自静一静" class="mr-2">
+                独自静一静
+            </label>
+        </div>
+        <!-- 第二层 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">4. 你希望通过心理学习解决的核心问题是：</p>
+            <label class="block mb-2">
+                <input type="radio" name="q4" value="日常情绪稳定，减少内耗" class="mr-2">
+                日常情绪稳定，减少内耗
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q4" value="具体困扰" class="mr-2">
+                具体困扰
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q4" value="提升个人影响力" class="mr-2">
+                提升个人影响力
+            </label>
+            <label class="block">
+                <input type="radio" name="q4" value="探索事业机会" class="mr-2">
+                探索事业机会
+            </label>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">5. 你更喜欢哪种学习方式？</p>
+            <label class="block mb-2">
+                <input type="radio" name="q5" value="轻量体验" class="mr-2">
+                轻量体验
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q5" value="体系化学习" class="mr-2">
+                体系化学习
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q5" value="定制化服务" class="mr-2">
+                定制化服务
+            </label>
+            <label class="block">
+                <input type="radio" name="q5" value="资源整合" class="mr-2">
+                资源整合
+            </label>
+        </div>
+        <!-- 第三层 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">6. 未来 1 - 3 年，你对心理领域的期待是：（可多选）</p>
+            <label class="block mb-2">
+                <input type="checkbox" name="q6" value="成为兼职心理导师" class="mr-2">
+                成为兼职心理导师
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q6" value="创业/代理区域课程" class="mr-2">
+                创业/代理区域课程
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q6" value="打造个人心理 IP" class="mr-2">
+                打造个人心理 IP
+            </label>
+            <label class="block">
+                <input type="checkbox" name="q6" value="仅作为兴趣学习" class="mr-2">
+                仅作为兴趣学习
+            </label>
+        </div>
+        <!-- 新增题目 1 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">7. 身边人的情绪状态对你的影响程度如何？</p>
+            <label class="block mb-2">
+                <input type="radio" name="q7" value="影响很大，容易被带动情绪" class="mr-2">
+                影响很大，容易被带动情绪
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q7" value="有一定影响，但能较快调整" class="mr-2">
+                有一定影响，但能较快调整
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q7" value="影响较小，能保持自己的情绪" class="mr-2">
+                影响较小，能保持自己的情绪
+            </label>
+            <label class="block">
+                <input type="radio" name="q7" value="几乎没有影响" class="mr-2">
+                几乎没有影响
+            </label>
+        </div>
+        <!-- 新增题目 2 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">8. 你通常通过什么途径获取心理知识？（可多选）</p>
+            <label class="block mb-2">
+                <input type="checkbox" name="q8" value="书籍" class="mr-2">
+                书籍
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q8" value="网络文章" class="mr-2">
+                网络文章
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q8" value="社交媒体" class="mr-2">
+                社交媒体
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="q8" value="专业课程" class="mr-2">
+                专业课程
+            </label>
+            <label class="block">
+                <input type="checkbox" name="q8" value="朋友分享" class="mr-2">
+                朋友分享
+            </label>
+        </div>
+        <!-- 特权需求锚定 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">9. 以下哪项权益最吸引你？</p>
+            <label class="block mb-2">
+                <input type="radio" name="q9" value="3 天社群体验 + 《情绪急救工具箱》" class="mr-2">
+                3 天社群体验 + 《情绪急救工具箱》
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q9" value="全年直播课 + 同城茶话会" class="mr-2">
+                全年直播课 + 同城茶话会
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q9" value="12 次 1 对 1 咨询 + 私人档案" class="mr-2">
+                12 次 1 对 1 咨询 + 私人档案
+            </label>
+            <label class="block">
+                <input type="radio" name="q9" value="课程分销 30%佣金 + 创业支持" class="mr-2">
+                课程分销 30%佣金 + 创业支持
+            </label>
+        </div>
+        <!-- 收尾题 -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <p class="text-xl font-bold mb-4">10. 你计划多久开始心理成长行动？</p>
+            <label class="block mb-2">
+                <input type="radio" name="q10" value="立即尝试" class="mr-2">
+                立即尝试
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q10" value="1 周内" class="mr-2">
+                1 周内
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="q10" value="1 个月内" class="mr-2">
+                1 个月内
+            </label>
+            <label class="block">
+                <input type="radio" name="q10" value="暂时没计划" class="mr-2">
+                暂时没计划
+            </label>
+        </div>
+        <div class="flex space-x-4">
+            <button type="button" id="submit-btn"
+                class="bg-orange-500 text-white py-2 px-4 rounded-md w-full hover:bg-orange-600">提交测评</button>
+            <button type="button" id="reset-btn"
+                class="bg-gray-500 text-white py-2 px-4 rounded-md w-full hover:bg-gray-600">重置测评</button>
+        </div>
+    </div>
+
+    <!-- 报告部分容器 -->
+    <div class="container mx-auto p-4 mt-8 report-container" id="report-container" style="display: none;">
+        <h1 class="text-3xl font-bold text-center mb-8">心理体检报告</h1>
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <div class="radar-chart mb-6">
+                <!-- 这里可以添加雷达图的代码 -->
+            </div>
+            <div id="report-content">
+                <!-- 报告内容将动态生成 -->
+            </div>
+            <button type="button" id="action-btn"
+                class="bg-blue-500 text-white py-2 px-4 rounded-md w-full hover:bg-blue-600 mt-4">
+                <!-- 按钮文案和链接将动态生成 -->
+            </button>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>新峰氧吧版权所有</p>
+    </div>
+
+    <script>
+        // 获取相关 DOM 元素
+        const submitBtn = document.getElementById('submit-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const quizContainer = document.querySelector('.container:first-child');
+        const reportContainer = document.getElementById('report-container');
+        const reportContent = document.getElementById('report-content');
+        const actionBtn = document.getElementById('action-btn');
+
+        // 提交测评按钮点击事件处理函数
+        submitBtn.addEventListener('click', function () {
+            // 收集用户答题数据
+            const formData = new FormData();
+            const questions = document.querySelectorAll('.bg-white');
+            questions.forEach((question) => {
+                const inputs = question.querySelectorAll('input');
+                inputs.forEach((input) => {
+                    if (input.checked) {
+                        formData.append(input.name, input.value);
+                    }
+                });
+            });
+
+            // 模拟计算得分和判断用户类型（这里需根据实际加权算法完善）
+            let emotionScore = 0;
+            let growthScore = 0;
+            let valueScore = 0;
+            let userType = '';
+
+            if (formData.get('q1') === '阴雨绵绵') {
+                emotionScore += 20;
+            }
+            if (formData.get('q4') === '日常情绪稳定，减少内耗') {
+                growthScore += 20;
+            }
+            if (formData.get('q9') === '课程分销 30%佣金 + 创业支持') {
+                valueScore += 20;
+            }
+
+            if (emotionScore > 50) {
+                userType = '紧急情绪型';
+            } else if (growthScore > 50) {
+                userType = '体系成长型';
+            } else if (valueScore > 50) {
+                userType = '商业拓展型';
+            } else {
+                userType = '深度定制型';
+            }
+
+            // 生成报告内容
+            let reportText = '';
+            let buttonText = '';
+            let buttonLink = '';
+
+            if (userType === '紧急情绪型') {
+                reportText = `你的「情绪急救值」${emotionScore}分，近期高压状态已影响生活节奏，需要立刻获取可落地的调节工具。`;
+                reportText += `
+                  🌟 推荐「心灵初探」9.9 元体验课
+                  <ul class="list-disc pl-4">
+                    <li>✅ 3 天社群沉浸：晨间冥想 + 晚间答疑，快速缓解焦虑</li>
+                    <li>✅ 专属福利：立即领取《情绪急救工具箱》（10 个心理调节音频）</li>
+                    <li>✅ 限时权益：完成 3 次打卡可获 365 元课程 50 元优惠券（直接抵扣）</li>
+                  </ul>
+                `;
+                buttonText = '9.9 元立即解锁 3 天社群';
+                buttonLink = 'payment-page.html';
+            } else if (userType === '体系成长型') {
+                reportText = `你的「成长清晰度」${growthScore}分，渴望通过持续学习建立稳定心态，同时需要社群陪伴与线下链接。`;
+                reportText += `
+                  🌟 推荐「心灵成长」365 元年度课
+                  <ul class="list-disc pl-4">
+                    <li>✅ 全年 52 周主题直播：每周 2 次系统课程，覆盖情绪管理、人际关系等</li>
+                    <li>✅ 专属特权：实体「心灵成长手账」 + 每月同城茶话会，找到同频伙伴</li>
+                    <li>✅ 限时福利：现在报名立减 50 元（可叠加体验课抵扣）</li>
+                  </ul>
+                `;
+                buttonText = '领取 50 元专属优惠券';
+                buttonLink = 'course-detail-page.html';
+            } else if (userType === '深度定制型') {
+                reportText = `你的「个性化需求」突出，明确想解决特定问题（如职场焦虑/亲密关系），需要 1 对 1 专属方案。`;
+                reportText += `
+                  🌟 推荐「心灵蜕变」1999 元深度疗愈课
+                  <ul class="list-disc pl-4">
+                    <li>✅ 12 次 1 对 1 咨询：专属咨询师制定「百日蜕变计划」，精准解决核心困扰</li>
+                    <li>✅ 专属特权：建立个人心理档案 + 优先体验 VR 疗愈舱，支持 7 天无理由退费</li>
+                    <li>✅ 限时福利：前 50 名报名赠价值 399 元 OH 卡团体咨询 2 次</li>
+                  </ul>
+                `;
+                buttonText = '详情请联系您的专属顾问';
+                buttonLink = 'consultant-dialog.html';
+            } else if (userType === '商业拓展型') {
+                reportText = `你的「价值拓展值」${valueScore}分，对心理领域职业发展或创业有明确目标，需要资源整合与赋能。`;
+                reportText += `
+                  🌟 推荐「心灵灯塔」导师孵化营/「心灵合伙人」
+                  <ul class="list-disc pl-4">
+                    <li>✅ 导师孵化营（9999 元）：无限次课程 + IP 打造 + 30%分销佣金，从学习者到导师</li>
+                    <li>✅ 合伙人计划（19999 元）：区域独家代理 + 55 分账系统 + 年度 5 万营销支持，开启事业闭环</li>
+                    <li>✅ 限时福利：预约可享创始人 1v1 事业规划咨询（价值 1999 元）</li>
+                  </ul>
+                `;
+                buttonText = '申请高阶课程资料包';
+                buttonLink = 'form-page.html';
+            }
+
+            reportContent.innerHTML = reportText;
+            actionBtn.textContent = buttonText;
+            actionBtn.addEventListener('click', function () {
+                window.location.href = buttonLink;
+            });
+
+            quizContainer.style.display = 'none';
+            reportContainer.style.display = 'block';
+            reportContainer.classList.add('fade-in');
+        });
+
+        // 重置测评按钮点击事件处理函数
+        resetBtn.addEventListener('click', function () {
+            const inputs = document.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+            inputs.forEach((input) => {
+                input.checked = false;
+            });
+            quizContainer.style.display = 'block';
+            reportContainer.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
+    
