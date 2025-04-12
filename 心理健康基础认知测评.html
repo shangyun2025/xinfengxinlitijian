@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理健康基础认知测评及分析报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold text-center mb-6">心理健康基础认知测评</h1>
+        <p class="text-gray-700 mb-8">亲爱的学员，感谢您参与我们的体验课程和轻咨询服务！这份测评旨在帮助您了解自己对心理健康基础知识的掌握情况，同时也协助我们为您提供更合适的学习建议。请您根据自身实际情况选择答案，所有题目均为单选题或判断题，轻松作答即可。</p>
+
+        <form id="assessmentForm">
+            <div class="bg-white p-6 rounded-md shadow-md mb-8">
+                <h2 class="text-xl font-bold mb-4">一、情绪类型判断（单选题）</h2>
+                <div class="mb-4">
+                    <p class="mb-2">1. 当你面对重要考试，心跳加速、手心出汗，感觉紧张不安，这属于哪种情绪？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q1" value="A" class="mr-2"> A. 愤怒
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q1" value="B" class="mr-2"> B. 焦虑
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q1" value="C" class="mr-2"> C. 快乐
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q1" value="D" class="mr-2"> D. 悲伤
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">2. 看到一部感人的电影，泪水忍不住流下来，此时你的情绪是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q2" value="A" class="mr-2"> A. 惊喜
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q2" value="B" class="mr-2"> B. 恐惧
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q2" value="C" class="mr-2"> C. 悲伤
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q2" value="D" class="mr-2"> D. 厌恶
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">3. 当你得到一直期待的礼物时，满脸笑容，心情愉悦，这种情绪是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q3" value="A" class="mr-2"> A. 幸福
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q3" value="B" class="mr-2"> B. 平静
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q3" value="C" class="mr-2"> C. 惊讶
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q3" value="D" class="mr-2"> D. 羞愧
+                    </label>
+                </div>
+                <div>
+                    <p class="mb-2">4. 在路上突然遇到一条大狗冲你吼叫，你立刻感到害怕，身体紧绷，这体现的情绪是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q4" value="A" class="mr-2"> A. 厌恶
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q4" value="B" class="mr-2"> B. 恐惧
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q4" value="C" class="mr-2"> C. 愤怒
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q4" value="D" class="mr-2"> D. 骄傲
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-md shadow-md mb-8">
+                <h2 class="text-xl font-bold mb-4">二、压力应对方式选择（单选题）</h2>
+                <div class="mb-4">
+                    <p class="mb-2">5. 当你在工作中遇到巨大压力，任务堆积如山，你认为哪种应对方式比较健康？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q5" value="A" class="mr-2"> A. 一直拖延，逃避任务
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q5" value="B" class="mr-2"> B. 疯狂吃零食，暴饮暴食
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q5" value="C" class="mr-2"> C. 找朋友倾诉，寻求建议
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q5" value="D" class="mr-2"> D. 一个人默默承受，不告诉任何人
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">6. 面对生活中的挫折，你会选择以下哪种方式来缓解压力？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q6" value="A" class="mr-2"> A. 进行一场酣畅淋漓的运动
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q6" value="B" class="mr-2"> B. 长时间打游戏来转移注意力
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q6" value="C" class="mr-2"> C. 喝很多酒来麻醉自己
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q6" value="D" class="mr-2"> D. 冲身边的人发脾气
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">7. 当你面临经济上的压力，感到焦虑时，比较好的应对方法是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q7" value="A" class="mr-2"> A. 过度节省，降低生活质量
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q7" value="B" class="mr-2"> B. 制定合理的理财计划并逐步执行
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q7" value="C" class="mr-2"> C. 忽视账单，不去想经济问题
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q7" value="D" class="mr-2"> D. 向他人不断抱怨自己的困境
+                    </label>
+                </div>
+                <div>
+                    <p class="mb-2">8. 如果你在社交场合中感到不自在、有压力，适宜的做法是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q8" value="A" class="mr-2"> A. 马上离开，再也不参加类似场合
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q8" value="B" class="mr-2"> B. 假装很自信，强撑场面
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q8" value="C" class="mr-2"> C. 找个安静角落独处一会，调整呼吸
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q8" value="D" class="mr-2"> D. 对周围人态度变差，发脾气
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-md shadow-md mb-8">
+                <h2 class="text-xl font-bold mb-4">三、常见心理问题识别（判断题）</h2>
+                <div class="mb-4">
+                    <p class="mb-2">9. 抑郁症仅仅是情绪低落，过一段时间自己就会好，不需要特殊治疗。（  ）</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q9" value="A" class="mr-2"> A. 正确
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q9" value="B" class="mr-2"> B. 错误
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">10. 强迫症就是喜欢把东西摆放得整整齐齐，是一种好习惯。（  ）</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q10" value="A" class="mr-2"> A. 正确
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q10" value="B" class="mr-2"> B. 错误
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">11. 焦虑症只是普通的担心，每个人都会有，不用太在意。（  ）</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q11" value="A" class="mr-2"> A. 正确
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q11" value="B" class="mr-2"> B. 错误
+                    </label>
+                </div>
+                <div>
+                    <p class="mb-2">12. 精神分裂症患者就是疯子，行为完全不可预测和控制。（  ）</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q12" value="A" class="mr-2"> A. 正确
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q12" value="B" class="mr-2"> B. 错误
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-md shadow-md mb-8">
+                <h2 class="text-xl font-bold mb-4">四、情绪调节方法认知（单选题）</h2>
+                <div class="mb-4">
+                    <p class="mb-2">13. 当你感到情绪低落时，哪种方法有助于提升情绪？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q13" value="A" class="mr-2"> A. 听欢快的音乐
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q13" value="B" class="mr-2"> B. 一直躺在床上不起来
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q13" value="C" class="mr-2"> C. 反复想让自己不开心的事情
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q13" value="D" class="mr-2"> D. 对身边的人发脾气
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">14. 如果和朋友发生了矛盾，心情很糟糕，你觉得怎么做能调节情绪？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q14" value="A" class="mr-2"> A. 直接和朋友断交
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q14" value="B" class="mr-2"> B. 冷静下来，找朋友沟通解决问题
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q14" value="C" class="mr-2"> C. 背后说朋友坏话
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q14" value="D" class="mr-2"> D. 把自己关起来，生闷气
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">15. 当你愤怒到极点时，比较好的情绪调节方式是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q15" value="A" class="mr-2"> A. 摔打身边的物品发泄
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q15" value="B" class="mr-2"> B. 做深呼吸，然后离开让你生气的场景
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q15" value="C" class="mr-2"> C. 立刻找对方理论，大声争吵
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q15" value="D" class="mr-2"> D. 憋在心里，不表现出来
+                    </label>
+                </div>
+                <div>
+                    <p class="mb-2">16. 当你感到孤独时，能有效改善情绪的是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q16" value="A" class="mr-2"> A. 一个人继续沉浸在孤独中
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q16" value="B" class="mr-2"> B. 主动联系朋友聊聊天
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q16" value="C" class="mr-2"> C. 长时间看伤感的电影
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q16" value="D" class="mr-2"> D. 抱怨自己总是这么孤单
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-md shadow-md mb-8">
+                <h2 class="text-xl font-bold mb-4">五、心理健康知识综合（单选题）</h2>
+                <div class="mb-4">
+                    <p class="mb-2">17. 以下哪种行为对心理健康有益？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q17" value="A" class="mr-2"> A. 每天花大量时间刷手机，很少和人交流
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q17" value="B" class="mr-2"> B. 定期参加社交活动，和朋友聚会
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q17" value="C" class="mr-2"> C. 总是熬夜，作息不规律
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q17" value="D" class="mr-2"> D. 只吃垃圾食品，不注重营养均衡
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">18. 心理健康的人通常具有以下哪个特点？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q18" value="A" class="mr-2"> A. 能很好地适应生活中的变化
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q18" value="B" class="mr-2"> B. 从不感到焦虑和压力
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q18" value="C" class="mr-2"> C. 总是追求完美，不允许自己犯错
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q18" value="D" class="mr-2"> D. 很少表达自己的情感
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">19. 保持良好心理健康，比较重要的是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q19" value="A" class="mr-2"> A. 只关注自己的需求，不顾及他人
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q19" value="B" class="mr-2"> B. 有自己的兴趣爱好，定期投入其中
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q19" value="C" class="mr-2"> C. 从来不拒绝别人的请求，委屈自己
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q19" value="D" class="mr-2"> D. 经常和他人比较，追求超过所有人
+                    </label>
+                </div>
+                <div>
+                    <p class="mb-2">20. 关于心理健康，以下说法正确的是？</p>
+                    <label class="block mb-1">
+                        <input type="radio" name="q20" value="A" class="mr-2"> A. 心理健康是固定不变的状态
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q20" value="B" class="mr-2"> B. 心理问题只影响情绪，不会影响身体
+                    </label>
+                    <label class="block mb-1">
+                        <input type="radio" name="q20" value="C" class="mr-2"> C. 寻求心理咨询是软弱的表现
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q20" value="D" class="mr-2"> D. 心理健康需要持续的关注和维护
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">提交测评</button>
+        </form>
+
+        <div id="result" class="mt-8 hidden">
+            <h2 class="text-xl font-bold mb-4">测评结果</h2>
+            <p id="resultMessage" class="text-gray-700"></p>
+            <div id="scoreAnalysis" class="mt-4"></div>
+            <div id="courseRecommendation" class="mt-4"></div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('assessmentForm');
+        const result = document.getElementById('result');
+        const resultMessage = document.getElementById('resultMessage');
+        const scoreAnalysis = document.getElementById('scoreAnalysis');
+        const courseRecommendation = document.getElementById('courseRecommendation');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const answers = {
+                q1: 'B',
+                q2: 'C',
+                q3: 'A',
+                q4: 'B',
+                q5: 'C',
+                q6: 'A',
+                q7: 'B',
+                q8: 'C',
+                q9: 'B',
+                q10: 'B',
+                q11: 'B',
+                q12: 'B',
+                q13: 'A',
+                q14: 'B',
+                q15: 'B',
+                q16: 'B',
+                q17: 'B',
+                q18: 'A',
+                q19: 'B',
+                q20: 'D'
+            };
+
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length;
+
+            const dimensionScores = {
+                emotionType: 0,
+                stressCoping: 0,
+                mentalProblemRecognition: 0,
+                emotionRegulation: 0,
+                generalKnowledge: 0
+            };
+
+            for (let question in answers) {
+                const selectedAnswer = form.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                    if (['q1', 'q2', 'q3', 'q4'].includes(question)) {
+                        dimensionScores.emotionType += 5;
+                    } else if (['q5', 'q6', 'q7', 'q8'].includes(question)) {
+                        dimensionScores.stressCoping += 5;
+                    } else if (['q9', 'q10', 'q11', 'q12'].includes(question)) {
+                        dimensionScores.mentalProblemRecognition += 5;
+                    } else if (['q13', 'q14', 'q15', 'q16'].includes(question)) {
+                        dimensionScores.emotionRegulation += 5;
+                    } else if (['q17', 'q18', 'q19', 'q20'].includes(question)) {
+                        dimensionScores.generalKnowledge += 5;
+                    }
+                }
+            }
+
+            const totalScore = score * 5;
+            result.classList.remove('hidden');
+            resultMessage.textContent = `您的测评已完成！您的总得分是 ${totalScore} 分。`;
+
+            // 总分等级划分
+            let overallLevel;
+            if (totalScore >= 90) {
+                overallLevel = '优秀';
+            } else if (totalScore >= 70) {
+                overallLevel = '良好';
+            } else if (totalScore >= 50) {
+                overallLevel = '中等';
+            } else {
+                overallLevel = '待提升';
+            }
+
+            // 分维度分析
+            const dimensionAnalysis = {
+                emotionType: {
+                    title: '情绪类型判断',
+                    scoreRange: {
+                        excellent: [18, 20],
+                        good: [14, 17],
+                        medium: [10, 13],
+                        poor: [0, 9]
+                    },
+                    excellentDesc: '能精准且迅速地识别各类情绪，对情绪的细微差别和复杂表现有深刻理解，在生活中能敏锐感知自己和他人的情绪变化。',
+                    goodDesc: '能准确识别常见情绪，对情绪的表现和引发因素有较好的理解，在多数情况下能合理应对情绪。',
+                    mediumDesc: '对部分情绪的辨别存在一定混淆，需要更多练习来提高对情绪的敏感度和识别能力。',
+                    poorDesc: '对基础情绪的定义和表现缺乏清晰认识，容易误解自己和他人的情绪，需要加强情绪认知的学习。'
+                },
+                stressCoping: {
+                    title: '压力应对方式选择',
+                    scoreRange: {
+                        excellent: [18, 20],
+                        good: [14, 17],
+                        medium: [10, 13],
+                        poor: [0, 9]
+                    },
+                    excellentDesc: '拥有一套成熟且有效的压力应对策略，能根据不同的压力源灵活调整应对方式，保持心理平衡和高效的工作生活状态。',
+                    goodDesc: '能采用积极健康的方式应对压力，在面对困难时保持乐观心态，具备一定的心理调适能力。',
+                    mediumDesc: '应对压力的方式不够稳定，有时会采用一些消极或低效的方法，需要学习更科学的压力管理技巧。',
+                    poorDesc: '依赖不健康或无效的应对方式，在压力面前容易陷入焦虑和无助，急需系统学习压力应对方法。'
+                },
+                mentalProblemRecognition: {
+                    title: '常见心理问题识别',
+                    scoreRange: {
+                        excellent: [18, 20],
+                        good: [14, 17],
+                        medium: [10, 13],
+                        poor: [0, 9]
+                    },
+                    excellentDesc: '对各类常见心理问题有深入、准确的了解，能清晰辨别其症状、成因和影响，具备专业的心理健康知识素养。',
+                    goodDesc: '能正确识别常见心理问题的基本特征，对心理问题的严重性和专业性有一定认识，能及时发现身边可能存在的问题。',
+                    mediumDesc: '对心理问题的认识存在一些偏差或不足，容易忽视一些潜在的心理问题，需要加强相关知识的学习。',
+                    poorDesc: '对心理问题的认知非常有限，存在较多误解和偏见，需要系统学习心理健康知识，树立正确的认知观念。'
+                },
+                emotionRegulation: {
+                    title: '情绪调节方法认知',
+                    scoreRange: {
+                        excellent: [18, 20],
+                        good: [14, 17],
+                        medium: [10, 13],
+                        poor: [0, 9]
+                    },
+                    excellentDesc: '熟练掌握多种有效的情绪调节方法，能在不同情绪状态下迅速、灵活地运用合适的策略，保持情绪的稳定和积极。',
+                    goodDesc: '掌握一些常见的情绪调节方法，能在大多数情况下有效地调节自己的情绪，保持良好的心理状态。',
+                    mediumDesc: '情绪调节方法较为单一，在面对复杂情绪时可能效果不佳，需要学习更多样化的情绪调节技巧。',
+                    poorDesc: '缺乏有效的情绪调节方法，容易被情绪左右，情绪波动较大，需要系统学习情绪调节的理论和实践方法。'
+                },
+                generalKnowledge: {
+                    title: '心理健康知识综合',
+                    scoreRange: {
+                        excellent: [18, 20],
+                        good: [14, 17],
+                        medium: [10, 13],
+                        poor: [0, 9]
+                    },
+                    excellentDesc: '具备全面、深入的心理健康知识体系，能将知识应用于日常生活，形成健康的生活方式和积极的心理态度。',
+                    goodDesc: '对心理健康的各个方面有较好的了解，能认识到心理健康的重要性，并在一定程度上采取措施维护自己的心理健康。',
+                    mediumDesc: '对心理健康知识有一定的了解，但不够系统和深入，在实际生活中的应用能力有待提高。',
+                    poorDesc: '对心理健康知识的掌握非常薄弱，存在较多错误观念，需要从基础开始学习心理健康知识。'
+                }
+            };
+
+            let analysisHtml = '<h3 class="text-lg font-bold mb-2">分维度分析与改进建议</h3>';
+            for (let dimension in dimensionScores) {
+                const score = dimensionScores[dimension];
+                const analysis = dimensionAnalysis[dimension];
+                let level;
+                if (score >= analysis.scoreRange.excellent[0]) {
+                    level = '优秀';
+                } else if (score >= analysis.scoreRange.good[0]) {
+                    level = '良好';
+                } else if (score >= analysis.scoreRange.medium[0]) {
+                    level = '中等';
+                } else {
+                    level = '待提升';
+                }
+                analysisHtml += `<p><strong>${analysis.title}</strong>（得分：${score} 分，等级：${level}）</p>`;
+                if (level === '优秀') {
+                    analysisHtml += `<p>${analysis.excellentDesc}</p>`;
+                } else if (level === '良好') {
+                    analysisHtml += `<p>${analysis.goodDesc}</p>`;
+                } else if (level === '中等') {
+                    analysisHtml += `<p>${analysis.mediumDesc}</p>`;
+                } else {
+                    analysisHtml += `<p>${analysis.poorDesc}</p>`;
+                }
+            }
+            scoreAnalysis.innerHTML = analysisHtml;
+
+            // 个性化课程推荐
+            let courseHtml = '<h3 class="text-lg font-bold mb-2">个性化课程推荐</h3>';
+            let recommendedCourse;
+            if (totalScore >= 90) {
+                recommendedCourse = `心灵灯塔（9999元，终身会员）：核心价值为个人品牌赋能。核心权益包括全品类课程无限畅学、年度高端疗愈旅行2次、个人IP打造服务、45%分销佣金；专属特权有导师孵化营资格、课程研发参与权、签约咨询师内部价。`;
+            } else if (totalScore >= 70) {
+                recommendedCourse = `心灵蜕变（3650元）：核心价值为深度个性化、系统疗愈。核心权益包括1v1咨询12次（价值3900元）、百日蜕变计划、闭门工作坊（艺术/沙盘）、专属导师督导；专属特权有AI学习伙伴匹配、季度心理咨询、VR疗愈舱优先体验。`;
+            } else if (totalScore >= 50) {
+                recommendedCourse = `心灵成长（365元年费制）：核心价值为持续陪伴、社群归属。核心权益包括46周主题直播（46课时）、实体成长手账、同城线下茶话会、12次OH卡团体咨询；专属特权有线下工作坊7折、心理成长档案、年度心灵体检报告。`;
+            } else {
+                recommendedCourse = `心灵初探（9.9元，附赠50元优惠券）：核心价值为轻量级体验。核心权益包括3天沉浸社群、情绪急救工具包（10音频）、心理体检H5报告、电子证书。`;
+            }
+            courseHtml += `<p>根据您的得分，为您推荐最适合的课程：${recommendedCourse}</p>`;
+            if (totalScore < 50) {
+                courseHtml += `<p>如果您想进一步提升心理健康水平，还可以考虑升级到心灵成长课程（365元年费制），享受更多持续陪伴和社群活动的权益。</p>`;
+            }
+            courseRecommendation.innerHTML = courseHtml;
+        });
+    </script>
+</body>
+
+</html>
+    
