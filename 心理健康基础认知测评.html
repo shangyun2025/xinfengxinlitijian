@@ -319,6 +319,7 @@
             <p id="resultMessage" class="text-gray-700"></p>
             <div id="scoreAnalysis" class="mt-4"></div>
             <div id="courseRecommendation" class="mt-4"></div>
+            <button id="contactAdviserBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 mt-4">详情请联系您的专属顾问</button>
         </div>
 
         <p class="text-center text-gray-500 mt-8">尚新峰版权所有 © 2025</p>
@@ -330,9 +331,27 @@
         const resultMessage = document.getElementById('resultMessage');
         const scoreAnalysis = document.getElementById('scoreAnalysis');
         const courseRecommendation = document.getElementById('courseRecommendation');
+        const contactAdviserBtn = document.getElementById('contactAdviserBtn');
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
+
+            // 检查是否有漏选的题目
+            const questionCount = 20;
+            let hasMissingAnswer = false;
+            for (let i = 1; i <= questionCount; i++) {
+                const questionName = `q${i}`;
+                const selectedAnswer = form.querySelector(`input[name="${questionName}"]:checked`);
+                if (!selectedAnswer) {
+                    hasMissingAnswer = true;
+                    alert(`您还有题目未作答，请完成第 ${i} 题。`);
+                    break;
+                }
+            }
+
+            if (hasMissingAnswer) {
+                return;
+            }
 
             const answers = {
                 q1: 'B',
